@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Album>
+@{
+	ViewData["Title"] = "List";
+}
+
+<ul>
+	@foreach(Album album in Model)
+	{
+		<li>@album.Title</li>
+	}
+</ul>
